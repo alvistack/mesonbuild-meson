@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+SHELL := /bin/bash
+
+override_dh_auto_install:
+	dh_auto_install
+	find debian/meson/usr/lib/python*/*-packages -type f -name '*.pyc' -exec rm -rf {} \;
+	install -Dpm755 -d debian/meson/usr/share/bash-completion/completions
+	install -Dpm644 data/shell-completions/bash/meson debian/meson/usr/share/bash-completion/completions/meson
+	fdupes -s debian/meson/usr/lib/python*/*-packages
+
+override_dh_auto_test:
+
+override_dh_auto_clean:
+
+%:
+	dh $@ --buildsystem=pybuild --with python3
