@@ -1,0 +1,4 @@
+meson: copyright-without-copyright-notice
+meson: initial-upload-closes-no-bugs
+meson: no-manual-page
+meson: zero-byte-file-in-doc-directory
