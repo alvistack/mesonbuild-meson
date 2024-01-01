@@ -1,0 +1,5 @@
+python-meson source: file-without-copyright-information
+python-meson source: no-debian-changes
+python-meson source: source-contains-prebuilt-windows-binary
+python-meson source: source-is-missing
+python-meson source: source-package-encodes-python-version
