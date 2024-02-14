@@ -1,0 +1,5 @@
+usr/bin/*
+usr/lib/python*/*-packages/*
+usr/share/bash-completion/completions/*
+usr/share/man/*/*
+usr/share/polkit-1/actions/*
